@@ -1,0 +1,26 @@
+[project]
+name = "ai-21"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "tuta260", email = "amtcactus26@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "einops>=0.8.2",
+    "ipykernel>=7.4.0",
+    "jaxtyping>=0.3.11",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.5",
+    "torch>=2.15.0",
+    "wandb>=0.31.0",
+]
+
+[project.scripts]
+ai-21 = "ai_21:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
